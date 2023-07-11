@@ -11,8 +11,17 @@
 		B30E7D7B2A4CFB6A00E4388E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30E7D7A2A4CFB6A00E4388E /* ContentView.swift */; };
 		B30E7D7D2A4CFB6C00E4388E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B30E7D7C2A4CFB6C00E4388E /* Assets.xcassets */; };
 		B30E7D802A4CFB6C00E4388E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B30E7D7F2A4CFB6C00E4388E /* Preview Assets.xcassets */; };
-		B30E7D822A4CFB6C00E4388E /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30E7D812A4CFB6C00E4388E /* Persistence.swift */; };
 		B30E7D852A4CFB6C00E4388E /* MinuteMath_SwiftUI.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B30E7D832A4CFB6C00E4388E /* MinuteMath_SwiftUI.xcdatamodeld */; };
+		B30E7D8C2A4D029900E4388E /* SelectSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30E7D8B2A4D029900E4388E /* SelectSet.swift */; };
+		B328BFED2A53464B004C96A4 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = B328BFEC2A53464B004C96A4 /* State.swift */; };
+		B328BFEF2A535571004C96A4 /* SetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B328BFEE2A535571004C96A4 /* SetManager.swift */; };
+		B328BFF32A535C6B004C96A4 /* MCQuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B328BFF22A535C6B004C96A4 /* MCQuestionView.swift */; };
+		B3B220572A4D062C0049DF80 /* Sets.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B220562A4D062C0049DF80 /* Sets.swift */; };
+		B3B220592A4D07110049DF80 /* arithmetic.png in Resources */ = {isa = PBXBuildFile; fileRef = B3B220582A4D07110049DF80 /* arithmetic.png */; };
+		B3B2205B2A4D193A0049DF80 /* DifficultyPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B2205A2A4D193A0049DF80 /* DifficultyPicker.swift */; };
+		B3B220642A4E51270049DF80 /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B220632A4E51270049DF80 /* QuestionView.swift */; };
+		B3B220662A4E60BF0049DF80 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B220652A4E60BF0049DF80 /* Colors.swift */; };
+		B3B220792A5096240049DF80 /* QuestionSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B220782A5096240049DF80 /* QuestionSet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,8 +30,17 @@
 		B30E7D7A2A4CFB6A00E4388E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B30E7D7C2A4CFB6C00E4388E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B30E7D7F2A4CFB6C00E4388E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		B30E7D812A4CFB6C00E4388E /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		B30E7D842A4CFB6C00E4388E /* MinuteMath_SwiftUI.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MinuteMath_SwiftUI.xcdatamodel; sourceTree = "<group>"; };
+		B30E7D8B2A4D029900E4388E /* SelectSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSet.swift; sourceTree = "<group>"; };
+		B328BFEC2A53464B004C96A4 /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		B328BFEE2A535571004C96A4 /* SetManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetManager.swift; sourceTree = "<group>"; };
+		B328BFF22A535C6B004C96A4 /* MCQuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCQuestionView.swift; sourceTree = "<group>"; };
+		B3B220562A4D062C0049DF80 /* Sets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sets.swift; sourceTree = "<group>"; };
+		B3B220582A4D07110049DF80 /* arithmetic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = arithmetic.png; path = ../../arithmetic.png; sourceTree = "<group>"; };
+		B3B2205A2A4D193A0049DF80 /* DifficultyPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultyPicker.swift; sourceTree = "<group>"; };
+		B3B220632A4E51270049DF80 /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
+		B3B220652A4E60BF0049DF80 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		B3B220782A5096240049DF80 /* QuestionSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionSet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,12 +73,16 @@
 		B30E7D772A4CFB6A00E4388E /* MinuteMath-SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				B328BFEB2A53463F004C96A4 /* state */,
+				B3B220552A4D06120049DF80 /* data */,
+				B30E7D8D2A4D02A800E4388E /* views */,
 				B30E7D782A4CFB6A00E4388E /* MinuteMath_SwiftUIApp.swift */,
 				B30E7D7A2A4CFB6A00E4388E /* ContentView.swift */,
 				B30E7D7C2A4CFB6C00E4388E /* Assets.xcassets */,
-				B30E7D812A4CFB6C00E4388E /* Persistence.swift */,
+				B3B220582A4D07110049DF80 /* arithmetic.png */,
 				B30E7D832A4CFB6C00E4388E /* MinuteMath_SwiftUI.xcdatamodeld */,
 				B30E7D7E2A4CFB6C00E4388E /* Preview Content */,
+				B3B220652A4E60BF0049DF80 /* Colors.swift */,
 			);
 			path = "MinuteMath-SwiftUI";
 			sourceTree = "<group>";
@@ -71,6 +93,35 @@
 				B30E7D7F2A4CFB6C00E4388E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B30E7D8D2A4D02A800E4388E /* views */ = {
+			isa = PBXGroup;
+			children = (
+				B30E7D8B2A4D029900E4388E /* SelectSet.swift */,
+				B3B2205A2A4D193A0049DF80 /* DifficultyPicker.swift */,
+				B3B220632A4E51270049DF80 /* QuestionView.swift */,
+				B328BFF22A535C6B004C96A4 /* MCQuestionView.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		B328BFEB2A53463F004C96A4 /* state */ = {
+			isa = PBXGroup;
+			children = (
+				B328BFEC2A53464B004C96A4 /* State.swift */,
+				B328BFEE2A535571004C96A4 /* SetManager.swift */,
+			);
+			path = state;
+			sourceTree = "<group>";
+		};
+		B3B220552A4D06120049DF80 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				B3B220562A4D062C0049DF80 /* Sets.swift */,
+				B3B220782A5096240049DF80 /* QuestionSet.swift */,
+			);
+			path = data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,6 +184,7 @@
 			files = (
 				B30E7D802A4CFB6C00E4388E /* Preview Assets.xcassets in Resources */,
 				B30E7D7D2A4CFB6C00E4388E /* Assets.xcassets in Resources */,
+				B3B220592A4D07110049DF80 /* arithmetic.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,10 +195,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B30E7D822A4CFB6C00E4388E /* Persistence.swift in Sources */,
 				B30E7D852A4CFB6C00E4388E /* MinuteMath_SwiftUI.xcdatamodeld in Sources */,
+				B3B220662A4E60BF0049DF80 /* Colors.swift in Sources */,
+				B328BFF32A535C6B004C96A4 /* MCQuestionView.swift in Sources */,
 				B30E7D7B2A4CFB6A00E4388E /* ContentView.swift in Sources */,
+				B328BFEF2A535571004C96A4 /* SetManager.swift in Sources */,
+				B328BFED2A53464B004C96A4 /* State.swift in Sources */,
+				B3B220572A4D062C0049DF80 /* Sets.swift in Sources */,
+				B3B220642A4E51270049DF80 /* QuestionView.swift in Sources */,
+				B30E7D8C2A4D029900E4388E /* SelectSet.swift in Sources */,
+				B3B2205B2A4D193A0049DF80 /* DifficultyPicker.swift in Sources */,
 				B30E7D792A4CFB6A00E4388E /* MinuteMath_SwiftUIApp.swift in Sources */,
+				B3B220792A5096240049DF80 /* QuestionSet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
