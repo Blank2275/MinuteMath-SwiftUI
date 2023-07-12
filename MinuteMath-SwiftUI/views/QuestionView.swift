@@ -3,22 +3,49 @@ import SwiftUI
 struct QuestionView: View {
     @EnvironmentObject var appState: AppState
     @StateObject var setManager: SetManager = SetManager(numQuestions: 5)
+    @State var showPopup: Bool = false
     
     var body: some View {
         NavigationStack{
-            VStack{
-                Spacer().frame(height:50)
-                Text("Minute Math")
-                    .font(.system(size: 40))
-                    .fontWeight(.bold)
-                Spacer()
-                Text(setManager.currentQuestionText)
-                    .font(.system(size: 20))
-                Spacer()
+            ZStack{
                 VStack{
-                    var _ = print(setManager.currentQuestionType)
-                    if setManager.currentQuestionType == .MC{
-                        MCQuestionView()
+                    Spacer().frame(height:50)
+                    Text("Minute Math")
+                        .font(.system(size: 40))
+                        .fontWeight(.bold)
+                    Spacer()
+                    if setManager.currentQuestionState == .Answering { // if you are currently answering a question, show options
+                        Text(setManager.currentQuestionText)
+                            .font(.system(size: 20))
+                        Spacer()
+                        VStack{
+                            if setManager.currentQuestionType == .MC{
+                                MCQuestionView()
+                            }
+                        }
+                    } else { //otherwise it means you got it incorrect
+                        IncorrectAnswerView()
+                    }
+                }
+                if showPopup {
+                    VStack{
+                        if setManager.answerWasCorrect {
+                            CorrectPopupView()
+                        }
+                        
+                    }
+                    .transition(AnyTransition.move(edge: .top).combined(with: .opacity))
+                }
+            }.onChange(of: setManager.currentQuestionNumber) { newQuestionNumber in
+                //don't do anything if currentQuestionState is answering
+                
+                withAnimation(.easeIn){
+                    showPopup = true
+                }
+                
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1.3) {
+                    withAnimation(.easeOut){
+                        showPopup = false
                     }
                 }
             }
@@ -45,6 +72,7 @@ struct QuestionButton: View {
         }){
             let potentialAnswers = setManager.currentQuestion?.mcQuestionData?.potentialAnswers ?? ["", "", "", ""]
             Text(potentialAnswers[answerNumber])
+                .font(.system(size: 25))
                 .frame(maxWidth: .infinity, minHeight: 200)
         }
         .background(CustomColors.mainButtonRed, ignoresSafeAreaEdges: [])

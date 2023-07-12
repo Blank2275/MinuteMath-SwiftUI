@@ -27,8 +27,29 @@ struct MCQuestionView: View {
     }
 }
 
-struct MCQuestionView_Previews: PreviewProvider {
-    static var previews: some View {
-        MCQuestionView()
+struct IncorrectAnswerView: View {
+    @EnvironmentObject var setManager: SetManager
+    
+    var body: some View {
+        VStack {
+            VStack{
+                Spacer()
+                Text("Incorrect")
+                    .font(.system(size: 30))
+                    .fontWeight(.bold)
+                Spacer()
+                Button("Next Problem") {
+                    setManager.advanceQuestion()
+                }
+                .buttonStyle(.borderedProminent)
+                Spacer()
+            }
+        }
     }
 }
+
+//struct MCQuestionView_Previews: PreviewProvider {
+//    static var previews: some View {
+////        MCQuestionView()
+//    }
+//}
